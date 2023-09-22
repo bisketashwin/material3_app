@@ -1,7 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import '../utils/bottom_navigation.dart';
+import 'package:flutter/material.dart';
+// import 'package:google_fonts/google_fonts.dart';
+import 'package:material3_app/theme/custom_color.dart';
+
+// import '../utils/bottom_navigation.dart';
 import '../utils/widgets.dart';
 
 class Tab2 extends StatefulWidget {
@@ -25,6 +28,8 @@ class _Tab2State extends State<Tab2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:
+          Theme.of(context).extension<CustomColors>()!.sourceCustomcolor1,
       body: ListView(
         children: [
           Padding(

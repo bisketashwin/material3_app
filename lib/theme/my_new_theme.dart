@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'custom_color.dart';
+
 ThemeData myLightTheme = ThemeData(
   useMaterial3: true,
   colorScheme: lightColorScheme,
   textTheme: textTheme,
+
+  /// following https://oflutter.com/flutter-material-3-how-to-use-custom-colors/
+  extensions: [lightCustomColors],
 );
 ThemeData myDarkTheme = ThemeData(
   useMaterial3: true,
   colorScheme: darkColorScheme,
   textTheme: textTheme,
+
+  /// following https://oflutter.com/flutter-material-3-how-to-use-custom-colors/
+  extensions: [darkCustomColors],
 );
 const lightColorScheme = ColorScheme(
   brightness: Brightness.light,
